@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+</head>
+<style>
+    .container{
+        height: 100vh;
+        width: 75%;
+        margin: auto;
+        /* background-color: chocolate; */
+    }
+    .sub{
+        height: 150px;
+        width: 150px;
+    }
+    .box1{
+        background-color: red;
+        position: relative;
+        z-index: 1;
+        top: 30px;
+    }
+    .box2{
+        background: green;
+        position: relative;
+        z-index: 0;
+    }
+    .box3{
+        background: magenta;
+        position: relative;
+        bottom: 30px;
+        z-index: -1;
+    }
+    .box4{
+        background: rgb(163, 163, 212);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box1 sub"><p>This is red box</p></div>
+        <div class="box2 sub"><p>This is green box</p></div>
+        <div class="box3 sub">This is magenta box</div>
+        <div class="box4 sub">This is lewendar box</div>
+    </div>
+</body>
+</html>

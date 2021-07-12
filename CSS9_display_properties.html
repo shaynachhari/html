@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+</head>
+<style>
+    .container{
+        border: 2px solid black;
+        width: 80%;
+        height: 75%;
+        margin: auto;
+        text-align: center;
+        padding: 25px;
+        background-color: rgba(106, 255, 86, 0.883);
+    }
+    .box{
+        border: 2px solid red;
+        margin: 10px;
+        padding: 5px;
+        background-color: burlywood;
+        width: 300px;
+        height: 270px;
+        /* display: block; */
+        display: inline-block;
+
+    }
+    .container span{
+        margin: 5px;
+        display: block;
+    }
+</style>
+<body>
+   <div class="container">
+       <div class="head">
+           <h1>
+               This is heading
+           </h1>
+       </div>
+       <div class="box" id="firstbox">
+           <h3>This is first box</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe in ducimus adipisci. Earum iste, reiciendis repellendus esse facere, autem at, quaerat neque ipsa vero eum veniam. Cum facere laboriosam, culpa voluptatum, eligendi delectus sequi fuga perferendis nostrum, facilis omnis molestias consectetur iusto veniam architecto dolores. Ducimus, expedita tempora? Ad.</p>
+       </div>
+       <div class="box" id="secondbox">
+        <h3>This is second box</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe in ducimus adipisci. Earum iste, reiciendis repellendus esse facere, autem at, quaerat neque ipsa vero eum veniam. Cum facere laboriosam, culpa voluptatum, eligendi delectus sequi fuga perferendis nostrum, facilis omnis molestias consectetur iusto veniam architecto dolores. Ducimus, expedita tempora? Ad.</p>
+       </div>
+       <div class="box" id="thirdbox">
+        <h3>This is third box</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe in ducimus adipisci. Earum iste, reiciendis repellendus esse facere, autem at, quaerat neque ipsa vero eum veniam. Cum facere laboriosam, culpa voluptatum, eligendi delectus sequi fuga perferendis nostrum, facilis omnis molestias consectetur iusto veniam architecto dolores. Ducimus, expedita tempora? Ad.</p>
+       </div>
+       <span>hello</span><span>there</span><span>this</span><span>is</span><span>display Property</span>
+   </div>
+</body>
+</html>

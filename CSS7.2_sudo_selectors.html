@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling link and botton</title>
+</head>
+<style>
+    .container{
+        border: 2px solid red;
+        width: 800px;
+        height: 175px;
+        margin: auto;
+        padding: 45px;
+        margin-top: 50px;
+        background-color: rgb(205, 243, 147);
+    }
+    .btn{
+        /* border: 2px solid blue; */
+        background-color: red;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .container a{
+        text-decoration: none;
+    }
+    button{
+        border: none;
+    }
+
+    /* sudo selectors */
+    .btn:hover{
+        background-color: rgb(228, 163, 196);
+    }
+    a:visited{
+       background-color: blue;
+    }
+    .btn:active{
+        background-color: green;
+    }
+
+</style>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quas eum veritatis, doloremque consequuntur ad accusantium nulla? Corporis impedit saepe in, rem enim provident obcaecati voluptate ipsa explicabo ad distinctio? Eligendi beatae possimus nulla.</p>
+        <a href="https://www.youtube.com" class="btn">Read more</a>
+        <button class="btn">Contact Us</button>
+
+    </div>
+</body>
+</html>
