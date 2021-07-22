@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After and Before pseudo selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        color: ivory;
+        background-color: black;
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+        margin: 22px;
+        font-size: 22px;
+        font-family: 'Averia Serif Libre', cursive;
+    }
+    section{
+        text-align: center;
+        /* border: 2px solid red; */
+        font-family: 'Averia Serif Libre', cursive;
+        width: 65%;
+        margin: auto;
+    }
+    h1{
+        font-size: 65px;
+    }
+
+    header::before{
+        content: "";
+        background: url("https://source.unsplash.com/random") no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.29;
+        /* opecity is like making transparent of image  */
+        
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>About us</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rem autem, similique adipisci quibusdam facere, consequatur cumque saepe modi ad fugit dolore doloremque. Ratione beatae aut eum quo quae. Quam veritatis nihil consectetur nisi.</p>
+    </section>
+</body>
+</html>

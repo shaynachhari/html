@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        :root{
+            --lightpurpul: rgb(207, 129, 231);
+            --lightgreen: rgba(151, 255, 212, 0.966);
+            --lightpink: rgb(255, 149, 199);
+            --maxwidth: 510px;
+            --maxheight: 500px;
+            --boxcolor: rgb(204, 209, 255);
+
+        }
+        .container{
+            border: 2px solid black;
+            /* height: 500px; */
+            height: var(--maxwidth);
+            /* width: 500px; */
+            width: var(--maxheight);
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+            background-color: var(--boxcolor);
+
+        }
+        .box{
+            border: 2px solid blueviolet;
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            
+        }
+        .box:nth-child(1){
+            background-color: var(--lightpurpul);
+        }
+        .box:nth-child(5){
+            background-color: var(--lightpurpul);
+        }
+        .box:nth-child(9){
+            background-color: var(--lightpurpul);
+        }
+        .box:nth-child(even){
+            background-color: var(--lightgreen);
+        }
+        .box:nth-child(3){
+            background-color: var(--lightpink);
+        }
+        .box:nth-child(7){
+            background-color: var(--lightpink);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

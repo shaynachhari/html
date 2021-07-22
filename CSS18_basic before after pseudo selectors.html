@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+</head>
+<style>
+    h1::before{
+        content: "using h1";
+    }
+    h1::after{
+        content: "using h1";
+    }
+    .container p::after{
+        content: " using p1";
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>
+            This is heading
+        </h1>
+        <p>This is 1st point</p>
+        <p>This is 2nd point</p>
+        <p>This is 3rd point</p>
+    </div>
+    <p>Outer paragraph</p>
+</body>
+</html>

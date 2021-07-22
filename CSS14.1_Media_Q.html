@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media quaries</title>
+</head>
+<style>
+    .container{
+        background-color: lawngreen;
+        width: 500px;
+        margin: 5px 12px;
+    }
+    .bigbox{
+        display: flex;
+    }
+    @media only screen and (max-width: 755px) {
+        .bigbox{
+            flex-wrap: wrap;
+        }
+        .container{
+            width: 100%;
+            background-color: lightcoral;
+        }
+        #thirdbox{
+            display: none;
+        }
+    }
+</style>
+<body>
+    <div class="bigbox">
+        <div class="container">
+            <h1>This is media quaries</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo blanditiis, harum inventore perferendis quia reprehenderit eos id voluptates pariatur.</p>
+        </div>
+        <div class="container">
+            <h1>This is media quaries</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo blanditiis, harum inventore perferendis quia reprehenderit eos id voluptates pariatur.</p>
+        </div>
+        <div class="container" id="thirdbox">
+            <h1>This is media quaries</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo blanditiis, harum inventore perferendis quia reprehenderit eos id voluptates pariatur.</p>
+        </div>
+    </div>
+</body>
+</html>
