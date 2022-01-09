@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+</head>
+<style>
+    /* main box  */
+    .container{
+        background-color: deepskyblue;
+        height: 90vh;
+        width: 200vh;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* small boxes */
+    .box{
+        width: 250px;
+        height: 250px;
+        border: 2px solid black;
+        margin: 10px;
+        transition: all 3s linear;
+    }
+    .box:nth-child(1){
+        background-color: brown;
+    }
+    .box:nth-child(2){
+        background-color: darkgoldenrod;
+    }
+    .box:nth-child(3){
+        background-color: darkmagenta;
+    }
+    .box:nth-child(4){
+        background-color: rgb(115, 165, 0);
+    }
+
+    /* hover  */
+    .box:hover{
+        /* transform: rotate(120deg); */
+        background-color: floralwhite;
+    }
+    .box:nth-child(1):hover{
+        transform: rotate(360deg);
+    }
+    .box:nth-child(2):hover{
+        transform: scale(1.5);
+    }
+    .box:nth-child(3):hover{
+        /* transform: skewx(20deg); */
+        /* transform: skewy(20deg); */
+        transform: skew(20deg, 20deg);
+    }
+    .box:nth-child(4):hover{
+        /* transform: translateX(120px); */
+        /* transform: translateY(120px); */
+        transform: translate(120px, -120px);
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">Fist box</div>
+        <div class="box">Second box</div>
+        <div class="box">Third box</div>
+        <div class="box">fourth box</div>
+    </div>
+</body>
+</html>

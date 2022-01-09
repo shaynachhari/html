@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+</head>
+<style>
+    html,body{
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 18rem auto;
+        grid-template-rows: 4rem auto;
+        /* grid-gap: 1rem; */
+    }
+
+    .box {
+        background-color: blueviolet;
+        padding: 25px;
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+    .box:first-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: rgb(25, 0, 117);
+        color: white;
+    }
+
+    .box li {
+        display: inline;
+        margin: 2px 20px;
+    }
+
+    .sidebar {
+        background-color: rgb(238, 99, 99);
+        font-size: 28px;
+        list-style: none;
+        padding: 15px;
+    }
+
+    .midcontant {
+        background-color: rgb(78, 214, 78);
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Services</li>
+            <li>Contact us</li>
+        </div>
+        <div class="sidebar">
+            <li>this is list-1</li>
+            <li>this is list-2</li>
+            <li>this is list-3</li>
+            <li>this is list-4</li>
+            <li>this is list-5</li>
+            <li>this is list-6</li>
+            <li>this is list-7</li>
+            <li>this is list-8</li>
+            <li>this is list-9</li>
+            <li>this is list-10</li>
+            <li>this is list-1</li>
+            <li>this is list-2</li>
+            <li>this is list-3</li>
+            <li>this is list-4</li>
+            <li>this is list-5</li>
+            <li>this is list-6</li>
+            <li>this is list-7</li>
+            <li>this is list-8</li>
+            <li>this is list-9</li>
+            <li>this is list-10</li>
+        </div>
+        <div class="box midcontant">
+            <img src="https://source.unsplash.com/user/erondu/1600x900">
+            <img src="https://source.unsplash.com/1600x900/?nature,water">
+            <img src="https://source.unsplash.com/collection/190727/1600x900">
+            <img src="https://source.unsplash.com/weekly?nature">
+            <img src="https://source.unsplash.com/weekly?sport">
+            <img src="https://source.unsplash.com/weekly?water">
+            <img src="https://source.unsplash.com/WLUHO9A_xik/1600x900">
+            <img src="https://source.unsplash.com/weekly?water">
+            <img src="https://source.unsplash.com/user/erondu/1600x900">
+            <img src="https://source.unsplash.com/weekly?animal">
+            <img src="https://source.unsplash.com/weekly?water">
+            <img src="https://source.unsplash.com/weekly?forest">
+            <img src="https://source.unsplash.com/weekly?waterfal">
+            <img src="https://source.unsplash.com/WLUHO9A_xik/1600x900">
+            <img src="https://source.unsplash.com/weekly?army">
+            <img src="https://source.unsplash.com/weekly?dog">
+        </div>
+    </div>
+</body>
+
+</html>

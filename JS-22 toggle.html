@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        border: 2px solid black;
+        width: 200px;
+        height: 150px;
+        text-align: center;
+        background-color: rgb(252, 223, 186);
+        margin: auto;
+        padding: 10px;
+    }
+
+    .btn {
+        margin: 15px;
+        width: 100px;
+        height: 35px;
+        background-color: rgb(0, 0, 58);
+        border: 1px solid black;
+        color: lightcyan;
+        border-radius: 6px;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+    }
+
+    .container-active {
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+    }
+
+    .btn-active {
+        background-color: rgb(252, 223, 186);
+        color: black;
+    }
+
+    .body-active {
+        background-color: darkblue;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea consequatur saepe placeat fuga ut.</p>
+        <button id="btn" class="btn">Dark</button>
+    </div>
+
+    <script>
+        let btn = document.getElementById("btn")
+        let container = document.querySelector('.container')
+        let body = document.getElementsByTagName('body')[0]
+
+        // 1st trick***********************************
+
+        // btn.addEventListener('click', () => {
+        //     if (container.style.backgroundColor == "black") {
+        //         container.style.backgroundColor = "rgb(252, 223, 186)"
+        //         container.style.color = "black"
+        //         container.style.border = "2px solid black"
+        //         body.style.backgroundColor = "white"
+        //         btn.style.backgroundColor = "rgb(0, 0, 58)"
+        //         btn.style.color = "white"
+        //     }
+        //     else {
+        //         container.style.backgroundColor = "black"
+        //         container.style.color = "white"
+        //         container.style.border = "2px solid lightcyan"
+        //         body.style.backgroundColor = "darkblue"
+        //         btn.style.backgroundColor = "rgb(252, 223, 186)"
+        //         btn.style.color = "black"
+        //     }
+        // })
+
+
+
+
+
+
+
+
+
+        //********************************************************************************************************************************************************************************************
+
+        // T O G G L E    =====>   2nd Trick***********************
+        btn.addEventListener('click', () => {
+            container.classList.toggle("container-active")
+            btn.classList.toggle("btn-active")
+            body.classList.toggle("body-active")
+            if (btn.innerText == "DARK") {
+                btn.innerText = "Light"
+            }
+            else {
+                btn.innerText = "Dark"
+            }
+        })
+    </script>
+</body>
+
+</html>

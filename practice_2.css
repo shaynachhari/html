@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* part 1 */
+/* nav li */
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px 50px;
+    font-size: 20px;
+}
+nav img{
+    margin: 0px 20px 0px 45px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+ nav{
+    display: flex;
+    z-index: 2;
+    position: fixed;
+    font-family: 'Baloo Bhai 2', cursive;
+    left: 0px;
+    top: 0px;
+} 
+nav::before{
+    content: "";
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 75;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.7;
+} 
+
+/* *upper* */
+
+.upper::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    background: url("/food-1932466_1920\ \(1\).jpg")  no-repeat center center/cover;
+}
+.upper {
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+}
+    
+
+
+.upper h1{
+    font-size: 3.5rem;
+    margin: 90px 0px 0px 20px;
+}
+.upper p{
+    font-size: 20px;
+}
+.btn{
+    width: 165px;
+    height: 45px;
+    background-color: brown;
+    border: 2px solid white;
+    color: white;
+    font-size: 23px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* part=2 */
+.service{
+    font-weight: bold;
+    margin: 30px;
+}
+.service h1{
+    
+    font-family: 'Baloo Bhai 2', cursive;
+    
+}
+.service>h1{
+    
+    font-size: 3.5rem;
+    text-align: center;
+    height: 70px;
+    padding-bottom: 20px;
+
+}
+
+.service-box{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item{
+    border: 2px solid rgb(88, 65, 67);
+    text-align: center;
+    padding: 25px;
+    background-color: rgb(252, 224, 248);
+    width: 350px;
+    margin: 0px 8px;
+    border-radius: 20px;
+}
+
+.service-box img{
+    height: 200px;
+    width: 200px;
+
+
+}
+
+.service-item h1{
+    font-size: 2.8rem;
+    margin: 10px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+/* part-4.1*/
+
+.our-Client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 250px;
+
+}
+
+.our-Client::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: url("/fooooood.jpg.jpg") no-repeat center center;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.85;
+
+}
+
+.our-Client h1{
+    font-size: 3.5rem;
+}
+.client-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.client-img img{
+    width: 150px;
+    height: 150px;
+}
+.client-img img:nth-child(2)
+{
+    width: 300px;
+}
+/*  part - 4 */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer p:nth-child(2){
+    color: gray;
+    
+}

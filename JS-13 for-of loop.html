@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For of loop</title>
+</head>
+<body>
+    <h2>The For-of loop</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nisi doloribus sapiente ipsa aut animi, dolor distinctio repellat in voluptatibus. Cupiditate dolorum consequatur non officia?</p>
+
+    <script>
+        // for-of loop use for iterating a array 
+        let goods = ['Maggie', 'Milk', 'bread', 'Tea', 'Coffie', 'Suger', 'Soap', 'Katchup', 'Pickle']
+        for(i of goods){
+            console.log(i)
+        }
+
+        let num = [2, 6, 8, 6, 45, 23, 12, 78, 65, 25, 69,  46, 99, 66, 78, 12, 13, 17, 15, 19, 11]
+        console.log("The even numbers are")
+        for (i of num){
+            if (i%2==0){
+                console.log(i)
+            }
+        }
+
+        console.log('The odd numbers are')
+        for(i of num){
+            if(i%2!=0){
+                console.log(i)
+            }
+        }
+    </script>
+</body>
+</html>

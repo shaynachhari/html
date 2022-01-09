@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        height: 600px;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: cornflowerblue;
+        text-align: center;
+    }
+
+    .common {
+        width: 280px;
+        height: 250px;
+        background-color: crimson;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .btn {
+        height: 40px;
+        width: 80px;
+        background-color: rgb(0, 0, 58);
+        border: 2px solid black;
+        border-radius: 8px;
+        color: white;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding: 4px;
+
+    }
+
+    .bluebox {
+        background-color: blue;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+    }
+
+    .greenbox {
+        background-color: green;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+    }
+
+    .yellowbox {
+        background-color: yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+    }
+
+    .pinkbox {
+        background-color: deeppink;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+    }
+
+    .btn-active {
+
+        background-color: rgb(252, 223, 186);
+        color: black;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="common">
+            <h1>This is a Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus cum ad tenetur. Perferendis
+                odit dolor vel laborum necessitatibus corporis.</p>
+            <button id="btn" class="btn" onclick="change()">Click</button>
+        </div>
+        <div class="common">
+            <h1>This is a Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus cum ad tenetur. Perferendis
+                odit dolor vel laborum necessitatibus corporis.</p>
+            <button id="btn1" class="btn" onclick="change()">Click</button>
+        </div>
+        <div class="common">
+            <h1>This is a Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus cum ad tenetur. Perferendis
+                odit dolor vel laborum necessitatibus corporis.</p>
+            <button id="btn" class="btn" onclick="change()">Click</button>
+        </div>
+        <div class="common">
+            <h1>This is a Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus cum ad tenetur. Perferendis
+                odit dolor vel laborum necessitatibus corporis.</p>
+            <button id="btn" class="btn" onclick="change()">Click</button>
+        </div>
+        <!-- <button id="btn" class="btn" onclick="change()">Click</button> -->
+    </div>
+    <script>
+        function change() {
+            let box1 = document.getElementsByClassName("common")[0]
+            let box2 = document.getElementsByClassName("common")[1]
+            let box3 = document.getElementsByClassName("common")[2]
+            let box4 = document.getElementsByClassName("common")[3]
+
+            let btn = document.getElementById("btn")
+
+            box1.classList.toggle("bluebox")
+            box2.classList.toggle("greenbox")
+            box3.classList.toggle("yellowbox")
+            box4.classList.toggle("pinkbox")
+
+            btn.classList.toggle("btn-active")
+            if (btn.innerText == "DARK") {
+                btn.innerText = "Light"
+            }
+            else {
+                btn.innerText = "Dark"
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
+}

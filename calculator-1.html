@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator-1</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .cal-body {
+        background-color: rgb(226, 226, 226);
+        width: 300px;
+        height: 316px;
+        margin: 40px 504px;
+    }
+
+    .display {
+        width: 100%;
+        border: 1px solid black;
+        height: 75px;
+        background-color: rgb(179, 179, 179);
+    }
+
+    .btn {
+        width: 66px;
+        height: 35px;
+        font-size: 22px;
+
+    }
+
+
+    .number-btn button {
+        height: 61px;
+    }
+
+    .button-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin: 62px 0px 0px 0px; */
+    }
+
+    .number-btn {
+        width: 207px;
+        height: 245px;
+    }
+
+    .operator-btn {
+        width: 66px;
+    }
+
+    #num1 {
+        color: black;
+    }
+
+    #num2 {
+        color: red;
+    }
+
+    #result {
+        color: green;
+    }
+</style>
+
+<body>
+    <div class="cal-body">
+
+        <div class="display">
+            <div id="num1"></div>
+            <div id="num2"></div>
+            <div id="operator"></div>
+            <div id="result"></div>
+        </div>
+
+        <div class="button-body">
+            <div class="number-btn">
+                <button class="btn" id="btn-0" onclick="numIn(0)">0</button>
+                <button class="btn" id="btn-1" onclick="numIn(1)">1</button>
+                <button class="btn" id="btn-2" onclick="numIn(2)">2</button>
+                <button class="btn" id="btn-3" onclick="numIn(3)">3</button>
+                <button class="btn" id="btn-4" onclick="numIn(4)">4</button>
+                <button class="btn" id="btn-5" onclick="numIn(5)">5</button>
+                <button class="btn" id="btn-6" onclick="numIn(6)">6</button>
+                <button class="btn" id="btn-7" onclick="numIn(7)">7</button>
+                <button class="btn" id="btn-8" onclick="numIn(8)">8</button>
+                <button class="btn" id="btn-9" onclick="numIn(9)">9</button>
+            </div>
+
+
+            <div class="operator-btn">
+                <button class="btn" id="as">AC</button>
+                <button class="btn" id="c">C</button>
+
+                <button class="btn" id="add" onclick="operatorIn('+')">+</button>
+                <button class="btn" id="sub" onclick="operatorIn('-')">-</button>
+                <button class="btn" id="multi" onclick="operatorIn('*')">*</button>
+                <button class="btn" id="div" onclick="operatorIn('/')">/</button>
+                <button class="btn" id="result" onclick="resultIn('')">=</button>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/calculator-1.js"></script>
+</body>
+
+</html>

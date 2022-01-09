@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid spanning</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 1rem;
+        /* grid-row-gap: 1rem; */
+        /* grid-column-gap: 2rem; */
+    }
+
+    .box {
+        border: 2px solid black;
+        background-color: rgb(233, 176, 220);
+        padding: 25px;
+    }
+
+    .box:first-child {
+        /* spanning */
+        /* grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3; */
+
+        /* short hand  it takes boxes*/
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+        <div class="box">This is box-11</div>
+        <div class="box">This is box-12</div>
+        <div class="box">This is box-13</div>
+        <div class="box">This is box-14</div>
+        <div class="box">This is box-15</div>
+        <div class="box">This is box-16</div>
+        <div class="box">This is box-17</div>
+        <div class="box">This is box-18</div>
+        <div class="box">This is box-19</div>
+        <div class="box">This is box-20</div>
+    </div>
+</body>
+
+</html>

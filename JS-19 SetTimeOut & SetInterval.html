@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <me ta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SetInterval and SetTimeOut</title>
+</head>
+
+<body>
+    <h3 id="heading">This is heading</h3>
+    <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis dolorem libero enim animi modi vel
+        deserunt, magnam ullam adipisci quo quas ad repudiandae!</p>
+
+    <script>
+        function greet(name, message) {
+            console.log("Hello", name, message)
+        }
+        setTimeout(greet, 5000, "shayna", "Good morning");
+        setTimeout(greet(), 5000);  //wrong method
+
+        let a = setTimeout(greet, 5000, "Shayna", "Good Morning");
+        console.log(a);
+        clearTimeout(a);
+
+
+        let b = setInterval(greet, 3000, "Shayna", "Good night");
+        let c = setInterval(greet, 1000, "Nitin", "Good morning");
+
+        clearInterval(c);
+
+        function showtime() {
+            let time = Date();
+            // let heading = document.getElementById("heading");
+            heading.innerHTML = time;
+        }
+
+        setInterval(showtime, 1000);
+        console.log(para);
+    </script>
+</body>
+
+</html>

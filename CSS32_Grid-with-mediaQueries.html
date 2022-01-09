@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html,body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "nav nav nav"
+        "leftaside midcontained rightaside"
+        "footer footer footer"
+        ;
+        grid-template-columns: 1fr 3fr 1fr
+    }
+    nav{
+        background-color: black;
+        color: white;
+        grid-area: nav;
+        padding: 25px;
+        font-size: 22px;
+    }
+    #leftaside{
+        background-color: rgb(231, 185, 231);
+        grid-area: leftaside;
+        padding: 20px;
+    }
+    .midcontained{
+        background-color: rgb(248, 243, 178);
+        grid-area: midcontained;
+        padding: 20px;
+    }
+    #rightaside{
+        background-color: teal;
+        grid-area: rightaside;
+        padding: 20px;
+    }
+    footer{
+        grid-area: footer;
+        background-color: black;
+        color: gray;
+        text-align: center;
+        padding: 10px;
+    }
+    @media only screen and (max-width:712px){
+        .container{
+            grid-template-areas: 
+            "nav nav nav"
+            "rightaside rightaside rightaside"
+            "midcontained midcontained midcontained"
+            "leftaside leftaside leftaside"
+            "footer footer footer"
+            ;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <nav>Home about contact services</nav>
+        <aside id="leftaside">
+            <h3>This is left aside</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo ex ipsam esse nobis facere atque optio doloribus natus similique quisquam architecto, officiis aliquid harum iure eos quaerat deserunt quidem consectetur ut odio possimus?</p>
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaG5vbG9neXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" height="150px">
+        </aside>
+        <div class="midcontained">
+            <h1 style="text-align: center;">This is midcontaint</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque, laborum dolore rem maxime quibusdam iste? Deleniti iure architecto, neque debitis quaerat aperiam obcaecati eligendi eius, eos facilis accusantium nemo rem. Exercitationem, sed! Beatae sequi aut culpa veritatis dolor nemo reprehenderit hic cum quibusdam, provident, laboriosam cupiditate illum! Facere minus cum expedita, vitae explicabo vel sapiente. Quas aut explicabo eum ut incidunt possimus odit rerum quia molestiae? Possimus illo amet animi repellendus ab atque, est consequatur? Rem, accusamus natus. Iure inventore quae similique ab odio doloribus iste, nesciunt facere quidem labore magnam. Reprehenderit eius blanditiis cumque aut? Ex, repellat voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eius odio reiciendis, inventore nemo distinctio vero officiis nobis dolore, eos vel voluptatem deleniti facilis modi impedit animi sequi. Harum quos perferends totam asperiores odio ipsa nesciunt ipsam temporibus incidunt facilis ut. Rem tenetur optio totam quam dolore nemo quia ratione, animi quis voluptate ex et odio itaque nam quaerat, faiam impedit placeat at tenetur, officia dolore culpa cumque itaque? Optio, eum maxime minima architecto nam iure nisi. Officia corporis debitis maxime perferendis aliquid voluptates, est autem beatae dolore doloribus quibusdam nemo enim animi mollitia voluptatem voluptatum laudantium nostrum, nisi distinctio amet eaque earum molestiae tempora. Asperiores eius dolorem odit, omnis repellat veritatis exercitationem repellendus velit quasi voluptates, ad quae tenetur blanditiis nostrum consequuntur hic? Accusamus sint tempore architecto illum a cupiditate vero, facilis officia fuga quaerat deserunt quibusdam soluta, quia doloremque deleniti blanditiis hic veniam. Nemo, reiciendis molestiae, dolore tempore non, possimus ipsum fuga hic voluptate explicabo quos iste ea harum!
+            fuga quaerat deserunt quibusdam soluta, quia doloremque deleniti blanditiis hic veniam. Nemo, reiciendis molestiae, dolore tempore non, possimus ipsum fuga hic voluptate explicabo quos iste ea harum! erat deserunt quibusdam soluta, quia doloremque deleniti blanditiis hic veniam. Nemo, reiciendis molestiae, dolore tempore non, possimus ipsum fuga hic voluptate explicabo quos iste ea harum!
+        </div>
+        <aside id="rightaside">
+            <h3>This is Right aside</h3>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim accusantium officiis expedita maxime saepe amet quos! Impedit, amet non illum quo eum tempora accusamus saepe eos exercitationem quod quidem iure ad dolor delectus voluptatum. Porro omnis voluptas excepturi ex velit voluptates. Laborum, atque. Numquam, deserunt maxime non nihil et eum.
+        </aside>
+        <footer>This website belongs to Shayna chhari and all rights reserverd.</footer>
+    </div>
+</body>
+</html>

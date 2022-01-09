@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables DataType and Operator</title>
+</head>
+
+<body>
+    <script>
+        // variables
+        // "const" variables are those variables whose value can not be change after declaration
+        // "var" variables can be update and re-assign 
+        // "let" variables can be update but not re-assign
+        // var a = 6;
+        // var b = 7;
+        // let c = 9;
+        // const d = 5;
+
+        // console.log(a);
+        // // console.log(b);
+        // console.log(c);
+        // // console.log(d);
+
+        // var a = 4;
+        // let c = 10;
+        // console.log(a);
+        // console.log(c);
+
+        // data types 
+        let name = "Shayna"  // string type
+        let num = 69 // integer type
+        let num2 = 69.5 // float type
+        let key = false // boolian type-----> 'f' and 't' for 'false' and 'true' will always small in js
+        let key2 = true // boolian type
+        // console.log(key, key2)
+        // console.log(name, num, num2)
+
+        // arthmetic operators
+        num = 56;
+        num2 = 42;
+        console.log("The sum of", num, "and", num2, ":", num + num2);  //+
+        console.log("The subtraction of", num, "and", num2, ":", num - num2);  //-
+        console.log("The divide of", num, "and", num2, ":", num / num2);   // '/'
+        console.log("The mod of", num, "and", num2, ":", num % num2);   // '%'
+        num = 2;
+        num2 = 5;
+        console.log("The exponantial of", num, "and", num2, ":", num ** num2);
+        console.log("the value of", num, "after increasment", ++num); // 2 and 3
+        console.log("the value of", num, "after increasment", num++); // 3 and 3
+        console.log("the value of", num, "after increasment", --num); // 4 and 3
+        console.log("the value of", num, "after increasment", num--); // 3 and 3
+        console.log(num); //2
+
+
+
+        // Imp Method
+        console.time('your code tool');
+        console.log('Hello console');
+        console.log(4 + 34);
+        console.log(34);
+        console.log(true);
+        console.log(false)
+        console.log([2, 4, 5, 6, 67, 87, 99]);
+        console.log({ shayna: "shayna", marks: 21 })
+        console.table({ shayna: "shayna", marks: 21, age: 19 })
+        console.warn('This is a warning');
+        // console.clear();
+        console.timeEnd('your code tool');
+        console.error('Thi is an Error');
+
+        console.table({ name: "Shaya", add: "Ambah", age: 19 });
+    </script>
+</body>
+
+</html>

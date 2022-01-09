@@ -1,0 +1,1 @@
+console.log("Welcome To JavaScrippt *Note-App*")

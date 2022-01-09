@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loop</title>
+</head>
+<body>
+    <h1>This is for loop</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet eveniet dignissimos accusamus praesentium velit distinctio ratione ipsa perferendis harum? Soluta commodi, saepe delectus voluptatum tenetur voluptates nesciunt doloribus maiores nisi hic, deleniti accusamus consectetur?</p>
+
+    <script>
+        let para = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet eveniet dignissimos accusamus praesentium velit distinctio ratione ipsa perferendis harum? Soluta commodi, saepe delectus voluptatum tenetur voluptates nesciunt doloribus maiores nisi hic, deleniti accusamus consectetur?"
+        // console.log(para)
+        let words = para.split(" ")
+        // console.log(words)
+
+        // for(let i=0; i<10; i++){
+        //     console.log(words[i])
+        // }
+
+        // for(var i=0; i<100; i++){
+        //     console.log(`${i}-love you jaan`)
+        // }
+
+
+        let names = ["Shayna", "Nitin", "Shanu", "Kimmi", "Nik", "Shivani", "Nishant", "kasis", "pallavi"]
+        function greet(arr){
+            for (let i=0; i<arr.length; i++){
+                console.log(`hello ${arr[i]}`)
+            }
+        }
+        // greet(names)
+        // greet(words)
+
+        for (let i=0; i<names.length; i++){
+            console.log(`hello ${names[i]}`)
+        }
+
+        function print(string){
+            console.log(string)
+        }
+        print("nitin")
+    </script>
+</body>
+</html>

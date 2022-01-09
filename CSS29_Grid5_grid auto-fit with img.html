@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid AutoFit</title>
+</head>
+<style>
+    .box{
+        /* background-color: cornflowerblue; */
+        border: 2px solid black;
+        height: 250px;
+    }
+    .container{
+        display: grid;
+        /* grid-template-columns: repeat(no. of column, width of column); */
+        /* grid-template-columns: repeat(8, auto); */
+        grid-template-columns: repeat(auto-fit, 100px);
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+        grid-gap: 1rem;
+        /* grid-gap: 10px; */
+        /* justify-content: center; */
+        /* align-items: center; */  
+    }
+    img{
+        width: -webkit-fill-available;
+        height: 250px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"><img src="https://source.unsplash.com/user/erondu/1600x900"></div>
+        <div class="box"><img src="https://source.unsplash.com/1600x900/?nature,water"></div>
+        <div class="box"><img src="https://source.unsplash.com/collection/190727/1600x900"></div>
+        <div class="box"><img src="https://source.unsplash.com/weekly?nature"></div>
+        <div class="box"><img src="https://source.unsplash.com/weekly?sport"></div>
+        <div class="box"><img src="https://source.unsplash.com/weekly?water"></div>
+        <div class="box"><img src="https://source.unsplash.com/WLUHO9A_xik/1600x900"></div>
+        <div class="box"><img src="https://source.unsplash.com/weekly?water"></div>
+        <div class="box"><img src="https://source.unsplash.com/user/erondu/1600x900"></div>
+        <div class="box"><img src="https://source.unsplash.com/weekly?animal"></div>
+        <div class="box"><img src="https://source.unsplash.com/weekly?water"></div>
+        <div class="box"><img src="https://source.unsplash.com/weekly?forest"></div>
+        <div class="box"><img src="https://source.unsplash.com/weekly?waterfal"></div>
+        <div class="box"><img src="https://source.unsplash.com/WLUHO9A_xik/1600x900"></div>
+        <div class="box"><img src="https://source.unsplash.com/weekly?army"></div>
+    </div>
+</body>
+</html>

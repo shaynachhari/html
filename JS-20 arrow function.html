@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+
+<body>
+    <h1 id="heading">This is arrow function</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dignissimos inventore id et amet vel laudantium,
+        veniam minima incidunt fugiat exercitationem odit alias totam.</p>
+
+    <script>
+        function normal_greet() {
+            console.log("1- hello Shayna");
+        }
+
+        arrow_greet = () => {
+            console.log("2 -hello", name);
+        }
+
+        arrow_greet("shayna");
+
+        // let heading = document.getElementById("heading");
+        setInterval(() => {
+            heading.innerHTML = Date();
+        }, 1000)
+
+
+
+
+
+        let greeting = "hello world"
+        let obj = {
+            greeting: "Good Morning",
+            names: ['Shayna', 'Nitin', 'Shivani'],
+            speak() {
+                this.names.forEach((student) => {
+                    console.log(this.greeting, student)
+                });
+            }
+        }
+        obj.speak();
+
+    </script>
+</body>
+
+</html>

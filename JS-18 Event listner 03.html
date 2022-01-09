@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listner</title>
+</head>
+<style>
+    .text {
+        box-sizing: border-box;
+        /* border: 2px solid black; */
+        height: 200px;
+        padding: 5px;
+        font-size: 15.5px;
+        transition-property: all;
+        transition-duration: 0.5s;
+
+    }
+</style>
+
+<body>
+    <h1 id="heading">This is heading</h1>
+    <p id="para" class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum libero recusandae fuga
+        totam quidem eos distinctio qui ipsa! At eum, exercitationem quidem ipsam maxime consequatur voluptatem
+        pariatur, quam necessitatibus illo ipsum adipisci nisi voluptates a assumenda repudiandae eius hic corrupti
+        obcaecati eos deleniti molestiae! Sint, temporibus dolorem veniam, blanditiis earum cupiditate accusantium
+        fugiat incidunt nisi, maxime minima. Non, nulla animi obcaecati voluptate praesentium tenetur consequuntur
+        eveniet consectetur maxime ipsum id velit! Deserunt, eos? Debitis, aperiam cum animi delectus molestias alias
+        deleniti quaerat magnam quibusdam eos obcaecati velit fugiat labore eum! Iste culpa minus nobis maiores quod
+        asperiores rerum ea illo, nisi doloribus. Iure eum quae quos blanditiis, nulla similique amet perspiciatis!
+        Aliquid exercitationem tempora nam accusamus quam optio praesentium possimus ratione iste. Quos, accusamus?
+        Magni tempore facilis at quia doloribus temporibus molestiae in repudiandae numquam saepe eius a, illum ex
+        incidunt, accusantium quae sit, aliquam dolorem! Atque molestiae odit consequatur provident nulla, perferendis
+        aspernatur error placeat? Animi dicta numquam inventore. Provident vitae dignissimos eos dolore perspiciatis id
+        mollitia harum amet cum iusto, laborum quidem aspernatur vel officia eaque autem distinctio reiciendis
+        recusandae nisi cupiditate quas dolor? Dolor, illum asperiores. Dicta a illo voluptate consectetur facere
+        laudantium dolorem similique doloremque aut facilis deleniti expedita, fugit porro id quae obcaecati odio
+        quaerat saepe aperiam quia ut aspernatur asperiores? Veritatis sapiente natus laborum enim quod, cumque, eos
+        perferendis omnis doloribus temporibus maxime cupiditate corrupti accusamus totam numquam aspernatur repellat
+        tempore, repellendus placeat error officiis blanditiis inventore voluptate. Quo consequuntur voluptatem at.
+        Voluptate, dolore.</p>
+    <button id="btn" onclick="togglehide()">Hide</button>
+
+    <script>
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        btn.style.backgroundColor = 'green';
+        function togglehide() {
+            if (para.style.height != '200px') {
+                para.style.height = '200px'
+                para.style.fontSize = '15.5px'
+                para.style.padding = '5px'
+                btn.style.backgroundColor = 'blue';
+                btn.innerText = 'Show'
+
+
+            }
+            else {
+                para.style.height = '0px'
+                para.style.fontSize = '0px'
+                para.style.padding = '0px'
+                btn.style.backgroundColor = 'green';
+                btn.innerText = 'Hide'
+
+
+
+            }
+
+        }
+
+        let heading = document.getElementById('heading');
+        heading.addEventListener('mouseover', function change() {
+            heading.style.color = 'white'
+            heading.style.backgroundColor = 'red'
+        })
+        heading.addEventListener('mouseout', function backchange() {
+            heading.style.backgroundColor = 'white'
+            heading.style.color = 'black'
+        })
+
+    </script>
+</body>
+
+</html>

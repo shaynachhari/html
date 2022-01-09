@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    nav {
+        background-color: black;
+        color: white;
+        display: flex;
+
+
+    }
+
+    .logo img {
+        height: 50px;
+        width: 50px;
+        margin: 10px 7px 3px 12px;
+    }
+
+
+    nav ul {
+        display: flex;
+        font-size: 21px;
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60%;
+    }
+
+    nav ul li:hover {
+        color: gray;
+    }
+
+    .btn {
+
+        position: absolute;
+        right: 20px;
+        top: 13px;
+        width: 72px;
+        height: 36px;
+        border: 2px solid #660e0e;
+        background-color: #5959fd;
+        border-radius: 6px;
+
+    }
+
+    .dropdown {
+        border: 2px solid black;
+        position: absolute;
+        background-color: cornflowerblue;
+        top: 86px;
+        width: 116px;
+        height: fit-content;
+        display: none;
+    }
+
+    .dropdown ul {
+        display: block;
+    }
+
+    .dropdown ul li {
+        /* border: 2px solid red; */
+        margin: 4px 7px;
+        width: fit-content;
+        color: white;
+    }
+
+    .dropdown-li {
+        padding: 32px 0px;
+    }
+
+    .sider {
+
+        border: 2px solid black;
+        position: absolute;
+        left: 118px;
+        top: 0px;
+        background-color: aqua;
+        display: none;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/hp.png" alt="">
+            </div>
+            <ul>
+                <li>Home</li>
+
+                <li id="product" class="dropdown-li">Products
+                    <div class="dropdown">
+                        <ul>
+                            <li id="computer" class="downsider">Computer
+                                <div class="sider">
+                                    <ul>
+                                        <li>Hardware</li>
+                                        <li>Software</li>
+                                        <li>Memory</li>
+                                        <li>CPU</li>
+                                        <li>Ram</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+
+
+                            <li>Laptops</li>
+                            <li>Mouse</li>
+                            <li>Keyboard</li>
+                            <li>Usb cable</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li id="contact" class="dropdown-li">Contact us
+                    <div class="dropdown">
+                        <ul>
+                            <li>Phone</li>
+                            <li>Gmail</li>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Google</li>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+                <li>Service</li>
+                <li>FQAX</li>
+            </ul>
+
+            <button class="btn" id="mode">Dark Mode</button>
+        </nav>
+
+    </header>
+
+    <script>
+        let nav = document.getElementsByTagName("nav")[0]
+
+        mode.addEventListener('click', () => {
+            if (nav.style.backgroundColor == "green") {
+                nav.style.backgroundColor = "black"
+                mode.innerText = 'Dark Mode'
+                mode.style.backgroundColor = "#5959fd"
+                mode.style.color = 'black'
+            }
+            else {
+                nav.style.backgroundColor = "green"
+                mode.innerText = 'Light Mode'
+                mode.style.backgroundColor = "rgb(243, 69, 69)"
+                mode.style.color = 'white'
+
+            }
+        })
+
+
+        function dropdown(id, dropdown_number) {
+            id.addEventListener('mouseover', () => {
+                document.getElementsByClassName("dropdown")[dropdown_number].style.display = "block"
+            })
+
+            id.addEventListener('mouseout', () => {
+                document.getElementsByClassName("dropdown")[dropdown_number].style.display = "none"
+            })
+        }
+        dropdown(product, 0)
+        dropdown(contact, 1)
+
+
+        computer.addEventListener('mouseover', () => {
+            document.getElementsByClassName("sider")[0].style.display = "block"
+        })
+
+        computer.addEventListener('mouseout', () => {
+            document.getElementsByClassName("sider")[0].style.display = "none"
+        })
+
+
+
+
+    </script>
+
+</body>
+
+</html>

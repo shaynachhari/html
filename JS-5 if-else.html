@@ -1,0 +1,47 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-Else</title>
+</head>
+<body>
+    <h1 id="h1">this is heading</h1>
+    <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed tempore dolores labore, quam earum veritatis quod iure, quia dolorum voluptate nisi perspiciatis. Facilis unde dolorem iste repudiandae expedita animi nostrum consequuntur laborum, maiores mollitia.</p>
+
+    <script>
+        // part - 1
+        let check_name = prompt("Enter your name")
+        if (("shayna" == check_name) || ("Shayna" == check_name)){
+            console.log("Welcome Shayna")
+        }
+        else if("Nitin" == check_name){
+            console.log("Welcome Nitin")
+        }
+        else{
+            console.log("name not match")
+        }
+
+        
+        // part - 2
+        let content = document.getElementById("para")
+        let heading = document.getElementById("h1")
+        let name_age = prompt("Enter your name and age")
+        
+        // if(prompt("Enter age")=="18"){
+        //     content.innerHTML = "You are of 18"
+        // }
+        // else{
+            
+
+        heading.innerHTML = name_age.split(" ")[0]
+        if(name_age.split(" ")[1]=="18"){
+            content.innerHTML = "You are of <strong>18</strong>"
+        }
+        else{
+            content.innerHTML = "You are not of 18"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout by grid area</title>
+</head>
+<style>
+    html, body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: grid;
+        /* grid-gap: 0.35rem; */
+        height: 100%;
+
+        grid-template-areas: 
+            "navbar navbar navbar navbar"
+            "sidebar midcontaint midcontaint midcontaint"
+            "footer footer footer footer"
+        ;
+    }
+    .item{
+        background-color: rgb(255, 191, 200);
+        padding: 12px;
+    }
+    #navbar{
+        grid-area: navbar;
+        background-color: black;
+        color: white;
+    }
+    #midcontaint{
+        grid-area: midcontaint;
+        padding: 20px;
+        text-align: center;
+    }
+    #sidebar{
+        grid-area: sidebar;
+        background-color: rgb(172, 255, 172);
+        padding: 25px;
+    }
+    #footer{
+        grid-area: footer;
+        background-color: black;
+        color: gray;
+        text-align: center;
+    }
+    #navbar li{
+        display: inline;
+        list-style: none;
+        margin: 10px 20px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Services</li>
+            <li>Contact us</li>
+        </div>
+        <div id="midcontaint" class="item">
+            <h1>This is Grid layout by Grid area</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio sequi quam consequatur porro. Laboriosam saepe perferendis soluta. Nam, consequatur, iure saepe sequi ipsam ducimus accusantium non quos laudantium recusandae doloremque assumenda magni facilis tempora consectetur aspernatur quaerat laboriosam! Assumenda a praesentium alias est! Dolorem, quam ratione id facilis repudiandae, rem praesentium quasi libero ducimus, aliquid sed ad at recusandae adipisci accusantium? Culpa accusamus minus debitis beatae ratione, perferendis nam blanditiis ad, exercitationem neque consequuntur quis aspernatur natus! Corporis dolore ducimus itaque earum ad vel aspernatur aut culpa consequuntur architecto, eius iure quas distinctio dolor rem nam laboriosam officia. Magni numquam quos doloribus, quod rem repudiandae quasi. Aperiam ullam reiciendis deleniti, optio tenetur eligendi iusto numquam quia quis architecto ipsa provident natus corporis quam ut. Iste a error excepturi saepe officiis quas numquam labore fuga incidunt eligendi commodi accusantium minus adipisci aperiam, sunt ea quis eaque cumque ducimus corporis perspiciatis deleniti reiciendis. Quasi, quos tempore nobis sapiente saepe magnam, quas, optio nemo fugit esse dignissimos necessitatibus eius earum quam quisquam ut recusandae? Omnis quaerat dolor necessitatibus, ullam in quia delectus quisquam cumque beatae quae odit fugiat nulla autem atque eaque voluptatum! Assumenda nemo est deserunt ad! Consectetur voluptate deleniti perspiciatis, asperiores accusamus in cum consequatur dolores! Non architecto, beatae ullam perspiciatis laboriosam consequatur, at optio, dolore sint pariatur velit ipsam ipsum sunt. Velit sed hic ipsam aut neque repudiandae dolor illum incidunt. Nesciunt expedita aliquid velit qui recusandae repellendus veniam, ea delectus ut corporis officiis provident explicabo, incidunt error dolorum facilis natus ipsam quibusdam voluptatum sit quae? Veniam id sit ipsa eveniet perferendis repudiandae est voluptatum, dolorem sed assumenda, ipsum ea culpa corporis sequi voluptas. Modi iure eius eum quisquam ullam quas aliquid fuga natus dolor molestias accusamus tenetur corporis, saepe praesentium eligendi repellat vel tempora voluptate ab debitis dolore facere architecto voluptatum! Minima et velit ullam inventore laboriosam, soluta, qui eius debitis ipsa, alias id voluptate recusandae libero sequi vel fugit asperiores quae odit atque vitae dolor quas. Tempore impedit officia tempora ratione unde nam autem, cupiditate, sed fuga dolorem debitis voluptates, fugit dolores expedita at neque voluptatum enim cumque! Architecto veniam animi optio dolores quam cumque molestiae enim excepturi consectetur eum. Dignissimos dolorem odio sed voluptas ea eaque autem id nisi repellendus quibusdam cupiditate beatae modi vitae quas, sint facilis, vero dolore ducimus incidunt asperiores impedit laudantium, necessitatibus esse. Nobis soluta facilis dolorem porro placeat, modi atque animi saepe, cumque at magnam a tempore sit consequuntur esse aspernatur odio voluptas neque. Ad, magnam voluptatibus cupiditate rerum fugiat nostrum voluptatum molestiae illo veniam voluptatem excepturi, quia distinctio optio deleniti tenetur! Minima ducimus dolores laborum iusto assumenda ipsa perferendis suscipit nulla quas nihil temporibus rem officia fuga adipisci dignissimos accusamus consequuntur est tenetur, iure id eaque ut ipsum? Qui molestiae illo rerum quasi porro pariatur consequatur officia nisi laudantium iure 
+        </div>
+        <div id="sidebar" class="item">
+            <h2>This is side bar </h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis suscipit id nihil nam, optio odit aspernatur quam vel assumenda eligendi dignissimos vitae repudiandae omnis commodi autem qui blanditiis iusto! A illo laudantium nisi debitis ullam quidem voluptas ab cumque, enim neque numquam ut ea dolore aspernatur, veritatis sit delectus odio officia nobis excepturi animi quo? Perferendis consequuntur fugit saepe reiciendis dolor quos maxime reprehenderit ipsum, amet molestias quis delectus earum voluptate nulla? Blanditiis saepe, fugit, ipsam in recusandae quam qui deserunt voluptatibus ad explicabo sit rerum ut voluptates dolor aliquam voluptate totam corporis, obcaecati necessitatibus. Fuga similique quos placeat odio.
+        </div>
+        <div id="footer" class="item">This website is belongs to Shayna chhari</div>
+    </div>
+</body>
+</html>

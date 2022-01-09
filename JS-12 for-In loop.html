@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In loop</title>
+</head>
+
+<body>
+    <h2>For in loop</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, ex!</p>
+    <input type="text" name="name" id="name">
+    <input type="email" name="email" id="email">
+    <input type="number" name="phone" id="phone">
+    <button onclick="submit()">submit</button>
+
+    <script>
+        // for-in loop use for iterating a object
+
+
+        // let fruits = ['apple', 'banana', 'mango', 'orange', 'grapes', 'papaya']
+        // for (i in fruits) {
+        //     console.log(fruits[i])
+        // }
+
+
+        let shayna = {}
+        function submit() {
+            shayna.name = document.getElementById("name").value
+            shayna.email = document.getElementById("email").value
+            shayna.phone = document.getElementById("phone").value
+            for (var i in shayna) {
+                console.log(shayna[i])
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

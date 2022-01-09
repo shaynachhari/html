@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 id="heading">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, doloribus?</h2>
+            <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto labore dolorem cumque maiores natus omnis!</p>
+        </div>
+        <div class="container" id="lst-container">
+            <ul>
+                <li>Home</li>
+                <li>about</li>
+                <li>services</li>
+                <li>Contact us</li>
+                <li>FAQs</li>
+            </ul>
+        </div>
+
+        <div class="input-container">
+            <input type="email" name="email" id="email">
+        </div>
+    </nav>
+    
+    <script>
+        let main = document.getElementById("heading");
+        console.log(main);
+        let paragraph = document.getElementById("para");
+        console.log(paragraph);
+
+        let box = document.getElementsByClassName("container");
+        console.log(box);
+
+        let name = document.getElementsByTagName("li");
+        console.log(name)
+
+        let list_container = document.getElementsByName("email");
+        console.log(list_container)
+
+        let query = document.querySelector(".container");
+        console.log(query)
+
+        let all_query = document.querySelectorAll(".container");
+        console.log(all_query);
+
+        
+    </script>
+</body>
+</html>

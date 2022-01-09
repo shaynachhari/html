@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odit iusto, at numquam assumenda dignissimos
+        natus deserunt error, veritatis doloribus blanditiis molestiae, inventore ad repellendus! Similique iusto non
+        temporibus alias?</h1>
+
+    <script>
+        // Object- This is a Object
+        let obj = { Name: "Shayna", Age: 9, Year: "3rdYear" }
+        console.log(obj)
+
+
+        //  string - This is a String with (JSON.stringify)
+        let jonslitreal = JSON.stringify(obj)
+        console.log(jonslitreal)
+        let str_m = jonslitreal.replace(9, 19)
+        console.log(str_m)
+
+
+        //  String to Convert Object with (use JSON.parse())
+        let obj1 = JSON.parse(jonslitreal)
+        console.log(obj1)
+
+        let obj10 = '{ "Name": "Shayna", "Age": 99, "Year": "3rdYear" }'
+        let obj11 = JSON.parse(obj10)
+        console.log(obj11)
+
+
+
+
+    </script>
+</body>
+
+</html>

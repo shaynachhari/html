@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    nav {
+        background-color: rgb(131, 174, 255);
+        color: white;
+        display: flex;
+        height: 86px;
+    }
+
+    .logo img {
+        height: 100x;
+        width: 80px;
+        margin: 2px 21px;
+        border: 2px solid gray;
+        border-radius: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60%;
+        font-size: 21px;
+
+    }
+
+    nav ul li:hover {
+        color: gray;
+
+    }
+
+    .btn {
+        height: 35px;
+        padding: 7px;
+        border-radius: 6px;
+        border: 1px solid;
+        position: absolute;
+        right: 35px;
+        top: 25px;
+        background-color: #e0dfdf;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./7100515022ce46f5ac28a315491b2859.png" alt="">
+            </div>
+
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Contact us</li>
+                <li>About Us</li>
+                <li>FAQs</li>
+            </ul>
+
+            <button class="btn" id="mode">Dark Mode</button>
+        </nav>
+    </header>
+
+    <script>
+        let nav = document.getElementsByTagName("nav")[0]
+        // let mode = document.getElementById("mode")
+        mode.addEventListener('click', () => {
+            if (nav.style.backgroundColor == "black") {
+                nav.style.backgroundColor = "rgb(131, 174, 255)"
+                mode.innerText = 'Dark Mode'
+                mode.style.backgroundColor = '#e0dfdf'
+                mode.style.color = 'black'
+            }
+            else {
+                nav.style.backgroundColor = "black"
+                mode.innerText = 'Light Mode'
+                mode.style.backgroundColor = 'gray'
+                mode.style.color = 'white'
+            }
+        })
+    </script>
+</body>
+
+</html>
